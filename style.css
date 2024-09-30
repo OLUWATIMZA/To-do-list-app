@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .app-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input, select {
+    padding: 8px;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .task-input button {
+    padding: 8px 12px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li.low-priority {
+    border-left: 5px solid green;
+  }
+  
+  li.medium-priority {
+    border-left: 5px solid orange;
+  }
+  
+  li.high-priority {
+    border-left: 5px solid red;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    background-color: #c7ffc7;
+  }
+  
+  button.remove {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  #add-task-btn {
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 12px 24px; 
+    text-align: left; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: ease-out; 
+    flex: 1;
+    margin-right: 10px;
+  
+  }
+  button.complete {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .progress {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  progress {
+    width: 100%;
+  }
+  
+  .customize {
+    text-align: right;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  body.dark .app-container {
+    background-color: #444;
+  }
+  
